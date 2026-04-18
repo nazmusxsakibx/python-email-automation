@@ -3,9 +3,9 @@ from email.mime.text import MIMEText
 
 test = "This is a super text"
 
-sender = "nazmus.sakib.cse.iu@gmail.com"
-receiver = "nazmus.sakib370@gmail.com"
-password = "yiug whjp otej ruvy"
+sender = "xxxxxx@xxxxx.com"
+receiver = "xxxxxx@xxxxx.com"
+password = "xxxx xxxx xxxx xxxx"
 
 msg = MIMEText(test)
 msg["Subject"] = "Python Email Test"
