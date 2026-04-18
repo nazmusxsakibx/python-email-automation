@@ -1,0 +1,19 @@
+import smtplib
+from email.mime.text import MIMEText
+
+test = "This is a super text"
+
+sender = "nazmus.sakib.cse.iu@gmail.com"
+receiver = "nazmus.sakib370@gmail.com"
+password = "yiug whjp otej ruvy"
+
+msg = MIMEText(test)
+msg["Subject"] = "Python Email Test"
+msg["From"] = sender
+msg["To"] = receiver
+
+with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+    server.login(sender, password)
+    server.sendmail(sender, receiver, msg.as_string())
+
+print("Email sent successfully!")
